@@ -36,6 +36,5 @@ class UserManager(BaseUserManager):
 # Create your models here.
 
 class User(AbstractUser):
-    # USERNAME_FIELD = 'email'
+    image = models.URLField(null=True, blank=True)
     REQUIRED_FIELDS = []
-    # objects = UserManager()
